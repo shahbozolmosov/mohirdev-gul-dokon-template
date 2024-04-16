@@ -55,8 +55,15 @@
 
 :root {
   --primary-family: "Montserrat", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --text-warning: #ffe3b9;
 }
 
+/* Global */
+body {
+  font-family: var(--primary-family);
+  margin-bottom: 2rem;
+}
 .container {
   max-width: 1440px;
 }
@@ -74,6 +81,17 @@ img {
   height: 36px;
   border-radius: 100%;
   padding: 0;
+}
+
+.btn-warning {
+  border-radius: 15px;
+  background: var(--text-warning);
+  border: none;
+
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
 }
 
 /* Header */
@@ -102,6 +120,7 @@ img {
   width: 100%;
   overflow: hidden;
   position: relative;
+  height: 100%;
   max-height: 380px;
 }
 
@@ -129,13 +148,13 @@ img {
   font-family: var(--primary-family);
   font-weight: 700;
   font-size: 22px;
-  color: #000;
+  color: #031430;
 }
 .banner__card--price {
   font-family: var(--primary-family);
   font-weight: 500;
   font-size: 24px;
-  color: #000;
+  color: #031430;
   margin: 0;
 }
 .price__prefix {
