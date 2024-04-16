@@ -53,6 +53,10 @@
   margin: 0;
 }
 
+:root {
+  --primary-family: "Montserrat", sans-serif;
+}
+
 .container {
   max-width: 1440px;
 }
@@ -114,9 +118,28 @@ img {
   padding: 8px;
 }
 
+.card__body--wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
 .banner__card--title {
+  font-family: var(--primary-family);
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
 }
 .banner__card--price {
+  font-family: var(--primary-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
 }
 .price__prefix {
+  font-family: var(--primary-family);
+  font-weight: 400;
+  font-size: 16px;
 }
