@@ -1,6 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+img {
+  width: 100%;
+}
+
+.main--radius {
+  border-radius: 24px;
+}
+
+.btn__heart {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  padding: 0;
+}
+
 /* Header */
-.header__nav{
+.header__nav {
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
+
+/* Banner */
+.banner {
+  overflow: hidden;
+  height: 70vh;
+  min-height: 600px;
+  max-height: 800px;
+}
+.banner__image,
+.banner__card--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* banner card */
+.banner__card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 380px;
+}
+
+.banner__card--body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: calc(100% - 32px);
+  margin: 16px;
+  border-radius: 12px;
+  backdrop-filter: blur(32px);
+  background: rgba(255, 255, 255, 0.31);
+  padding: 8px;
+}
+
+.banner__card--title{}
+.banner__card--price{}
+.price__prefix{}
