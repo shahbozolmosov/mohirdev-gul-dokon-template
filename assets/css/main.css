@@ -91,7 +91,7 @@ img {
 
 .bg--blur {
   backdrop-filter: blur(32px);
-  background: rgba(255, 255, 255, 0.31);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .btn__heart {
@@ -119,7 +119,7 @@ img {
   z-index: -1;
 }
 
-.bg>img {
+.bg > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -205,7 +205,6 @@ img {
 .flower__card {
   width: 100%;
   height: 100%;
-  cursor: pointer;
 }
 .flower__card--image {
   height: 100%;
@@ -215,6 +214,60 @@ img {
   margin-bottom: 12px;
   transition: all 0.2s ease-in-out;
 }
-.flower__card:hover .flower__card--image {
+
+.flower__card--image--bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flower__card--image--bg img {
+  max-width: 90vw;
+  max-height: 60vh;
+  border-radius: 24px;
+  opacity: 0.2;
+  filter: blur(36px);
+  object-fit: cover;
+}
+.flower__card:hover:not(.notHover) .flower__card--image {
   transform: scale(1.1);
+}
+.flower_card--desc {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #424242;
+}
+
+/* ====================
+      DETAILS
+=======================*/
+.card__comment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.card__comment:nth-child(even) {
+  border-top: 1px solid #cbcbcb;
+}
+.card__comment--body {
+  display: flex;
+  gap: 22px;
+}
+.card__comment--image {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.card-end {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

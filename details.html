@@ -23,7 +23,7 @@
       <nav class="navbar bg-transparent">
         <div class="container">
           <a class="navbar-brand" href="/">
-            <img src="/assets/images/logo.svg" alt="Bootstrap" height="18" />
+            <img src="/assets/images/logo.svg" alt="Bootstrap" height="16" />
           </a>
           <div class="navbar-nav header__nav">
             <a class="nav-link" href="#">
@@ -51,30 +51,36 @@
     </header>
     <!-- /Header -->
 
+    <div class="flower__card--image--bg" data-aos="zoom-in" data-aos-delay="600">
+      <img src="/assets/images/product07.webp" alt="Flower">
+    </div>
+
     <!-- Main -->
     <main>
       <div class="container">
         <!-- Details -->
-        <section class="row mb-4"> 
-          <div class="col-4">
-            <div class="flower__card" data-aos="fade-up" data-aos-delay="150">
-              <img src="/assets/images/product07.webp" alt="Flower" class="flower__card--image  main--radius">
+        <section class="row m-0 mb-5"> 
+          <div class="col-sm-12 col-md-4 p-sm-0 pe-md-2 pe-lg-5">
+            <div class="position-sticky top-0">
+              <div class="flower__card notHover" data-aos="fade-up">
+                <img src="/assets/images/product07.webp" alt="Flower" class="flower__card--image  main--radius">
+              </div>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-sm-12 col-md-8 bg--blur main--radius p-3 p-5"  data-aos="fade-up" data-aos-delay="50">
             <div class="flower__card--body mb-5">
               <div class="card__body--wrapper mb-3">
-                <h3 class="banner__card--title">Flower</h3>
-                <button class="btn btn-light btn__heart">
+                <h3 class="banner__card--title" data-aos="fade-up" data-aos-delay="100">Flower</h3>
+                <button class="btn btn-light btn__heart" data-aos="zoom-in" data-aos-delay="600">
                   <i data-feather="heart"></i>
                 </button>
               </div>
-              <div class="card__body--wrapper ">
-                <p class="banner__card--price">15 000 <small class="price__prefix">so'm</small></p>
-                <button class="btn btn-warning rounded-5">Add to card</button>
+              <div class="card__body--wrapper">
+                <p class="banner__card--price"  data-aos="fade-up" data-aos-delay="150">15 000 <small class="price__prefix">so'm</small></p>
+                <button class="btn btn-warning rounded-5"  data-aos="fade-up" data-aos-delay="150">Add to card</button>
               </div>
             </div>
-            <p>
+            <p class="flower_card--desc" data-aos="fade-up" data-aos-delay="300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat, praesentium sequi possimus quia dolore ullam, placeat non ratione nobis autem esse officiis harum aperiam nulla quasi tempora hic earum eveniet voluptatum officia ab necessitatibus quo! Obcaecati asperiores temporibus deleniti sapiente, quam, fuga eligendi delectus est aliquid quos quisquam necessitatibus qui assumenda earum atque eius vitae nam perspiciatis dolorum. Cumque velit tenetur iusto fuga id repudiandae nihil vitae quam corrupti doloribus, modi blanditiis possimus, optio vel suscipit iure. Numquam, odio? Eum blanditiis accusantium repudiandae officia tenetur hic eligendi optio fugiat corrupti voluptate magni perferendis magnam consequatur, eveniet atque sunt qui nam necessitatibus eos sit quis delectus possimus. Labore harum aut iste, repellat incidunt obcaecati culpa! Molestiae, sit accusantium nam reprehenderit ex sapiente tempore dolorem, numquam temporibus illo soluta ipsum iure labore, adipisci placeat. Quod nesciunt tempora esse est quasi natus voluptatem eaque nostrum dicta obcaecati autem quo delectus, et accusamus. Officia a cumque deserunt sed recusandae illum quasi, dolorem illo vitae hic sit corporis laudantium, ea nulla eos temporibus. Ab voluptas exercitationem magni? Quisquam rem, aliquid fugiat id molestiae, impedit natus explicabo reiciendis at quasi minus fuga officia dolore! Sapiente ipsum in dicta ipsam natus illo, ut quod culpa debitis aut doloremque, labore placeat hic voluptatem? Architecto dolorem veniam similique accusantium hic praesentium vitae neque quos molestiae dolore repellendus explicabo, at et quaerat aliquam nobis libero esse sapiente pariatur. Odio consectetur similique, totam neque reiciendis veritatis sit. Molestias nemo quis, qui fugiat libero eveniet ab architecto reiciendis consequatur unde quae provident, accusamus placeat, veniam dolorum ratione in iusto corporis exercitationem aspernatur eos laboriosam doloremque neque. Quisquam provident sunt itaque veniam, deserunt quo voluptatum perferendis est aliquam ratione tempore quam repellat ipsa soluta nihil tempora magnam voluptate rerum, consectetur nesciunt obcaecati maxime molestias enim! Harum libero necessitatibus inventore soluta ex ipsam!
             </p>
           </div> 
@@ -82,7 +88,7 @@
         <!-- /Banner --> 
 
         <!-- Add comments -->
-        <section class="bg--blur main--radius">
+        <section class="bg--blur main--radius px-3 py-4">
           <form>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
@@ -96,22 +102,39 @@
         <!-- /Add comments -->
 
         <!-- All comments -->
-        <section class="row">
-          <div class="col-4">
+        <section class="row m-0">
+          <div class="col-sm-12 col-md-5 col-lg-4">
             <!-- Statistic -->
           </div>
-          <div class="col-8">
-            <div class="card mb-3" style="width: 100%;">
-              <div class="row g-0">
-                <div class="col-md-2">
-                  <img src="..." class="img-fluid rounded-start" alt="...">
+          <div class="col-sm-12 col-md-7 col-lg-8 bg--blur main--radius py-3">
+            <div class="card__comment mb-3 p-2 p-md-4">
+              <div class="card__comment--body flex-column flex-md-row">
+                <img src="/assets/images/person02.webp" class="card__comment--image" alt="Person profile">
+                <div>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
-                <div class="col-md-10">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+              </div> 
+            </div>
+            <div class="card__comment mb-3 p-2 p-md-4">
+              <div class="card__comment--body flex-column flex-md-row">
+                <img src="/assets/images/person02.webp" class="card__comment--image" alt="Person profile">
+                <div>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div> 
+              <div class="card-end">
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-danger rounded-pill d-flex">
+                    <i class="me-2" data-feather="trash"></i>
+                    Delete
+                  </button>
+                  <button class="btn btn-outline-secondary rounded-pill d-flex">
+                    <i data-feather="edit-2"></i>
+                  </button>
                 </div>
               </div>
             </div>
