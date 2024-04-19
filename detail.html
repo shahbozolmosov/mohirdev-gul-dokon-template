@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo.svg" alt="Bootstrap" height="18" />
+          </a>
+          <div class="navbar-nav header__nav">
+            <a class="nav-link" href="#">
+              <i data-feather="search"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i data-feather="heart"></i>
+            </a>
+            <a class="nav-link  position-relative" href="#">
+              <i data-feather="shopping-bag"></i>
+              <span class="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-danger">
+                12
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+            <a class="nav-link" href="#">
+              <i data-feather="user"></i>
+              Login
+            </a>
+          </div>  
+      </div>
+      </nav>
+    </div>
+  
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <!-- Details -->
+        <section class="row mb-4"> 
+          <div class="col-4">
+            <div class="flower__card" data-aos="fade-up" data-aos-delay="150">
+              <img src="/assets/images/product07.webp" alt="Flower" class="flower__card--image  main--radius">
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="flower__card--body mb-5">
+              <div class="card__body--wrapper mb-3">
+                <h3 class="banner__card--title">Flower</h3>
+                <button class="btn btn-light btn__heart">
+                  <i data-feather="heart"></i>
+                </button>
+              </div>
+              <div class="card__body--wrapper ">
+                <p class="banner__card--price">15 000 <small class="price__prefix">so'm</small></p>
+                <button class="btn btn-warning rounded-5">Add to card</button>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat, praesentium sequi possimus quia dolore ullam, placeat non ratione nobis autem esse officiis harum aperiam nulla quasi tempora hic earum eveniet voluptatum officia ab necessitatibus quo! Obcaecati asperiores temporibus deleniti sapiente, quam, fuga eligendi delectus est aliquid quos quisquam necessitatibus qui assumenda earum atque eius vitae nam perspiciatis dolorum. Cumque velit tenetur iusto fuga id repudiandae nihil vitae quam corrupti doloribus, modi blanditiis possimus, optio vel suscipit iure. Numquam, odio? Eum blanditiis accusantium repudiandae officia tenetur hic eligendi optio fugiat corrupti voluptate magni perferendis magnam consequatur, eveniet atque sunt qui nam necessitatibus eos sit quis delectus possimus. Labore harum aut iste, repellat incidunt obcaecati culpa! Molestiae, sit accusantium nam reprehenderit ex sapiente tempore dolorem, numquam temporibus illo soluta ipsum iure labore, adipisci placeat. Quod nesciunt tempora esse est quasi natus voluptatem eaque nostrum dicta obcaecati autem quo delectus, et accusamus. Officia a cumque deserunt sed recusandae illum quasi, dolorem illo vitae hic sit corporis laudantium, ea nulla eos temporibus. Ab voluptas exercitationem magni? Quisquam rem, aliquid fugiat id molestiae, impedit natus explicabo reiciendis at quasi minus fuga officia dolore! Sapiente ipsum in dicta ipsam natus illo, ut quod culpa debitis aut doloremque, labore placeat hic voluptatem? Architecto dolorem veniam similique accusantium hic praesentium vitae neque quos molestiae dolore repellendus explicabo, at et quaerat aliquam nobis libero esse sapiente pariatur. Odio consectetur similique, totam neque reiciendis veritatis sit. Molestias nemo quis, qui fugiat libero eveniet ab architecto reiciendis consequatur unde quae provident, accusamus placeat, veniam dolorum ratione in iusto corporis exercitationem aspernatur eos laboriosam doloremque neque. Quisquam provident sunt itaque veniam, deserunt quo voluptatum perferendis est aliquam ratione tempore quam repellat ipsa soluta nihil tempora magnam voluptate rerum, consectetur nesciunt obcaecati maxime molestias enim! Harum libero necessitatibus inventore soluta ex ipsam!
+            </p>
+          </div> 
+        </section>
+        <!-- /Banner --> 
+
+        <!-- Add comments -->
+        <section class="bg--blur main--radius">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Example text..."></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-warning">Add comment</button>
+            </div>
+          </form>
+        </section>
+        <!-- /Add comments -->
+
+        <!-- All comments -->
+        <section class="row">
+          <div class="col-4">
+            <!-- Statistic -->
+          </div>
+          <div class="col-8">
+            <div class="card mb-3" style="width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /All comments -->
+      </div>
+    </main>
+    <!-- /Main -->
+    
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    <!-- /Footer -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    feather.replace();
+    AOS.init();
+  </script>
+</html>
