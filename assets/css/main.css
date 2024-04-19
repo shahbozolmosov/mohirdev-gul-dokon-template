@@ -63,6 +63,8 @@
 body {
   font-family: var(--primary-family);
   margin-bottom: 2rem;
+  min-height: 100vh;
+  position: relative;
 }
 section {
   margin-bottom: 120px;
@@ -108,6 +110,19 @@ img {
   font-weight: 400;
   font-size: 14px;
   color: #000;
+}
+
+/* Bg */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.bg>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Header */
