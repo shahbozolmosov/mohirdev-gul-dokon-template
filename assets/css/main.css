@@ -46,6 +46,13 @@
   font-weight: 700;
   src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: "Gugi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gugi-v15-latin-regular.woff2") format("woff2");
+}
 
 * {
   box-sizing: border-box;
@@ -56,6 +63,7 @@
 :root {
   --primary-family: "Montserrat", sans-serif;
   --second-family: "Roboto", sans-serif;
+  --logo-family: "Gugi", sans-serif;
   --text-warning: #ffe3b9;
 }
 
@@ -65,6 +73,9 @@ body {
   margin-bottom: 2rem;
   min-height: 100vh;
   position: relative;
+}
+.navbar-brand{
+  display: inline-block;
 }
 section {
   margin-bottom: 120px;
@@ -270,4 +281,73 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+/* ====================
+      ADMIN
+=======================*/
+
+.admin_layout { 
+  width: 100%;
+  padding-left: 400px;
+}
+
+.admin__side {
+  max-width: 385px;
+  width: 100%;
+  padding: 30px 18px;
+  backdrop-filter: blur(32px);
+  background: rgba(255, 255, 255, 0.31);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.admin__side .navbar-brand {
+  margin-bottom: 20px;
+}
+.logo--title {
+  font-family: var(--logo-family);
+
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  background: linear-gradient(90deg, #000 0%, #424242 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile__card {
+  border-radius: 12px;
+  width: 100%;
+  min-height: 71px;
+  backdrop-filter: blur(32px);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.profile__card--image {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(150, 150, 150) 0%,
+    rgb(223, 223, 223) 100%
+  );
+}
+
+.profile__card--title {
+  font-family: var(--primary-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: #424242;
+  margin: 0;
+  line-height: 140%;
 }
