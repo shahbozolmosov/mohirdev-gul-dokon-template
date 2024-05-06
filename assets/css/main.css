@@ -367,3 +367,33 @@ img {
   background: #2A2F3E;
 }
  
+
+/* SEARCH BOX */
+.search--box {
+  max-width: 400px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  z-index: 0;
+  position: relative;
+  margin: 12px 0;
+}
+.search--box__icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  color: #969696;
+}
+.search--box input {
+  font-family: var(--primary-family);
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-left: 48px;
+  z-index: 0;
+  border-radius: 12px;
+  background: #F2FAFF;
+}
