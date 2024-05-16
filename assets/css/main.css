@@ -291,6 +291,7 @@ img {
   width: 100%;
   padding-left: 400px;
   padding-right: 30px;
+  margin-bottom: 100px;
 }
 
 .admin__side {
@@ -378,7 +379,7 @@ img {
   gap: 12px; 
   z-index: 0;
   position: relative;
-  margin: 12px 0;
+  margin: 3rem 0;
 }
 .search--box__icon {
   position: absolute;
